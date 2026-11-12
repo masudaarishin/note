@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>頼み方ノート</title>
+<meta name="description" content="AIへの頼み方を、写して使う。コピペで使える文面を配っています。">
+<meta property="og:title" content="頼み方ノート">
+<meta property="og:description" content="AIへの頼み方を、写して使う。">
+<style>
+:root{
+  --olive:#5a6b1c;
+  --olive-dark:#49571a;
+  --ink:#1a1a1a;
+  --paper:#faf8f2;
+  --line:#d8d3c4;
+  --muted:#6b6557;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Hiragino Mincho ProN","Yu Mincho",YuMincho,serif;
+  line-height:1.8;
+  font-size:16px;
+}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+header{border-bottom:2px solid var(--ink);padding:28px 0 14px;margin-bottom:28px}
+.kicker{font-size:13px;letter-spacing:.18em;color:var(--olive);margin:0 0 6px}
+h1{font-size:28px;line-height:1.35;margin:0 0 10px;font-weight:600}
+.lead{font-size:15px;color:var(--muted);margin:0}
+h2{
+  font-size:19px;margin:0 0 4px;font-weight:600;
+  border-left:4px solid var(--olive);padding-left:10px;
+}
+section{margin:0 0 44px}
+.note{font-size:14px;color:var(--muted);margin:0 0 18px;padding-left:14px}
+.sheets{display:flex;flex-direction:column;gap:10px}
+.sheets img{width:100%;height:auto;display:block;border:1px solid var(--line)}
+.howto{
+  background:#fff;border:1px solid var(--line);padding:14px 16px;
+  font-size:14px;color:var(--muted);margin:0 0 16px;
+}
+.howto strong{color:var(--ink)}
+pre{
+  background:#fff;border:1px solid var(--line);padding:14px;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:13px;line-height:1.7;white-space:pre-wrap;word-break:break-word;
+  margin:0 0 12px;max-height:320px;overflow:auto;
+}
+button{
+  font-family:inherit;font-size:15px;
+  background:var(--olive);color:#fff;border:none;
+  padding:12px 20px;cursor:pointer;width:100%;
+}
+button:active{background:var(--olive-dark)}
+footer{
+  border-top:1px solid var(--line);padding:22px 0 40px;
+  font-size:13px;color:var(--muted);
+}
+footer a{color:var(--olive);text-decoration:underline}
+.credit{margin-top:14px;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <p class="kicker">コピペで使える</p>
+  <h1>AIへの頼み方を、<br>写して使う。</h1>
+  <p class="lead">動画も広告も、全部AIで回しています。使った文面と手順をここに置いています。</p>
+</header>
+
+<section>
+  <h2>頼み方ノート（10枚）</h2>
+  <p class="note">要約・メール・推敲・理解・相談・比較・整理・点検の8つと、迷ったときの型。</p>
+  <div class="howto">
+    <strong>保存のしかた</strong>：画像を長押しして「写真に追加」。
+    アプリの中で見ているときは、ダウンロードより長押しの方が確実です。
+  </div>
+  <div class="sheets">
+    <img src="images/01.png" alt="頼み方ノート 1枚目 もくじ" width="1080" height="1350" fetchpriority="high">
+    <img src="images/02.png" alt="頼み方ノート 2枚目" width="1080" height="1350" loading="lazy">
+    <img src="images/03.png" alt="頼み方ノート 3枚目" width="1080" height="1350" loading="lazy">
+    <img src="images/04.png" alt="頼み方ノート 4枚目" width="1080" height="1350" loading="lazy">
+    <img src="images/05.png" alt="頼み方ノート 5枚目" width="1080" height="1350" loading="lazy">
+    <img src="images/06.png" alt="頼み方ノート 6枚目" width="1080" height="1350" loading="lazy">
+    <img src="images/07.png" alt="頼み方ノート 7枚目" width="1080" height="1350" loading="lazy">
+    <img src="images/08.png" alt="頼み方ノート 8枚目" width="1080" height="1350" loading="lazy">
+    <img src="images/09.png" alt="頼み方ノート 9枚目" width="1080" height="1350" loading="lazy">
+    <img src="images/10.png" alt="頼み方ノート 10枚目" width="1080" height="1350" loading="lazy">
+  </div>
+</section>
+
+<section>
+  <h2>議事録 → タスク表のプロンプト</h2>
+  <p class="note">【　】の中だけ書き換えて、AIチャットに貼ってください。</p>
+<pre id="p1">あなたは会議の記録係です。下の【議事録】から、やるべきことを抜き出して表にしてください。
+
+# 出し方
+- 列は「やること」「担当」「期限」「もとの発言」の4つ。
+- 1行に1つのやること。同じ内容は1行にまとめる。
+- 「もとの発言」には、根拠にした議事録の文を、言い換えずにそのまま引用する。
+- 最後に、同じ表をタブ区切りでもう一度出す（Excel やスプレッドシートにそのまま貼るため）。
+
+# 守ること
+- 議事録に書かれていないことは、推測で埋めない。担当や期限が書かれていなければ「未定」と書く。
+- 「来週の金曜」のような言い方は、会議の日付から数えて実際の日付（年/月/日）に直す。直せないときは元の言い方のまま残す。
+- 決まったことと、話に出ただけのことを分ける。話に出ただけのものは表に入れず、表の下に「未決のこと」として箇条書きにする。
+
+# 会議の日付
+【2026/11/12（木）】
+
+# 議事録
+【ここにメモや文字起こしをまるごと貼る】</pre>
+  <button type="button" id="copy">この文面をコピー</button>
+  <div class="howto" style="margin-top:16px">
+    <strong>使ったあとに</strong>：表の「もとの発言」を見て、担当と期限が合っているかだけ自分の目で確かめてください。AIは言い回しを取り違えることがあります。
+  </div>
+</section>
+
+<footer>
+  <!-- ▼ 名前とInstagramのユーザー名は、この2行だけ直せば変わります -->
+  <p>作っている人：<strong>ありしん</strong><br>
+  <a href="https://www.instagram.com/arishin_ai/">Instagram に戻る</a></p>
+  <p class="credit">動画の音声：VOICEVOX:青山龍星</p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var btn = document.getElementById('copy');
+  var pre = document.getElementById('p1');
+  btn.addEventListener('click', function(){
+    var text = pre.textContent;
+    function done(ok){
+      btn.textContent = ok ? 'コピーしました' : '長押しで選んでコピーしてください';
+      setTimeout(function(){ btn.textContent = 'この文面をコピー'; }, 2000);
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function(){ done(true); }, function(){ fallback(); });
+    } else { fallback(); }
+    function fallback(){
+      var ta = document.createElement('textarea');
+      ta.value = text;
+      ta.setAttribute('readonly','');
+      ta.style.position = 'fixed';
+      ta.style.top = '-1000px';
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand('copy'); } catch(e) { ok = false; }
+      document.body.removeChild(ta);
+      done(ok);
+    }
+  });
+})();
+</script>
+
+<!--
+GA4 を入れるときは、下の2行のコメントを外して G-XXXXXXXXXX を測定IDに置き換える。
+Instagram のアプリ内ブラウザは Cookie が制限されるため、数字は実数より少なく出ることがある（目安として見る）。
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
+-->
+</body>
+</html>
