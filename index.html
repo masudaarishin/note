@@ -62,6 +62,11 @@ footer{
 }
 footer a{color:var(--olive);text-decoration:underline}
 .credit{margin-top:14px;font-size:12px}
+.gift{background:#fff;border:1px solid var(--line);padding:16px;margin:0 0 16px}
+.gift h3{font-size:17px;margin:0 0 6px}
+.gift p{font-size:14px;color:var(--muted);margin:0 0 12px}
+.gift a.dl{display:inline-block;background:var(--olive);color:#fff;text-decoration:none;padding:10px 16px;font-size:15px}
+.gift a.dl:active{background:var(--olive-dark)}
 </style>
 </head>
 <body>
@@ -121,6 +126,30 @@ footer a{color:var(--olive);text-decoration:underline}
   </div>
 </section>
 
+<section id="skills">
+  <h2>Claudeに入れるスキル（無料）</h2>
+  <p class="note">Claudeに入れておくと、決まった仕事を決まった手順でやってくれる「スキル」です。実際の運用で使ってきた手順と落とし穴を入れています。</p>
+  <div class="howto">
+    <strong>受け取り方</strong>：zip のファイルです。インスタの中で開いているときは、下のボタンでリンクをコピーして、<strong>パソコンで開く</strong>のがおすすめです。
+    入れ方は zip の中の「はじめに.md」に書いています。
+    <br><button type="button" id="copylink" style="margin-top:10px">このページのリンクをコピー</button>
+  </div>
+  <div class="gift">
+    <h3>LINE営業スキル集（9本）</h3>
+    <p>プロラインの送信前チェック（落とし穴の一覧と確認用スクリプトつき）、配信の下書き、返信の下書き、リマインド設定、ステップ配信の設計、タグの棚卸し、配信の振り返り、Lステップの注意。</p>
+    <a class="dl" href="gifts/line-eigyo-skills.zip" download>ダウンロード（zip・約50KB）</a>
+  </div>
+  <div class="gift">
+    <h3>総合型選抜 伴走スキル</h3>
+    <p>志望理由書・面接・小論文・活動実績の対策を、AIが「代わりに書く」のではなく「問いかけで本人の考えを引き出す」形で手伝います。受験生本人にも保護者にも。</p>
+    <a class="dl" href="gifts/sougougata-skill.zip" download>ダウンロード（zip・約50KB）</a>
+  </div>
+  <div class="howto">
+    合格を約束するものではありません。大学の方式・締切・字数は、必ずその年の募集要項で確かめてください。
+    AIが作った文面や設定は、送る前・出す前に自分の目で確かめてください。
+  </div>
+</section>
+
 <footer>
   <!-- ▼ 名前とInstagramのユーザー名は、この2行だけ直せば変わります -->
   <p>作っている人：<strong>ありしん</strong><br>
@@ -166,5 +195,8 @@ Instagram のアプリ内ブラウザは Cookie が制限されるため、数�
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script>
 -->
+<script>
+document.getElementById('copylink').addEventListener('click',async e=>{const u=location.href.split('#')[0]+'#skills';try{await navigator.clipboard.writeText(u);e.target.textContent='コピーしました'}catch(_){prompt('このリンクをコピーしてください',u)}});
+</script>
 </body>
 </html>
